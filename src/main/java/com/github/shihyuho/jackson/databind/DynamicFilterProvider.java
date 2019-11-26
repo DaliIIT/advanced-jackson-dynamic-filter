@@ -1,5 +1,7 @@
 package com.github.shihyuho.jackson.databind;
 
+
+
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.SerializerProvider;
@@ -49,7 +51,7 @@ public class DynamicFilterProvider extends SimpleFilterProvider implements Prope
 
   @Override
   public void serializeAsField(Object pojo, JsonGenerator jgen, SerializerProvider prov,
-      PropertyWriter writer) throws Exception {
+                               PropertyWriter writer) throws Exception {
     delegate.serializeAsField(pojo, jgen, prov, writer);
   }
 
